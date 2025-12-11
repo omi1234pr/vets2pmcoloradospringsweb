@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vets2PM Colorado Springs: Business Case</title>
+    <title>Vets2PM Colorado Springs: Business Documents</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
@@ -14,14 +14,6 @@
         .bg-primary { background-color: #198754 !important; }
         .text-primary { color: #198754 !important; }
         
-        .roi-box {
-            background-color: #e6f7e6; /* Light Green */
-            border-left: 5px solid #198754; 
-        }
-        .cost-box {
-            background-color: #e0f2ff; /* Light Blue */
-            border-left: 5px solid #0d6efd; /* Primary Blue */
-        }
         .shadow-sm:hover {
             transform: translateY(-3px);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -32,22 +24,20 @@
             padding-top: 6rem;
             margin-top: -6rem;
         }
-        .timeline-item {
-            position: relative;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            border-left: 2px solid #ccc;
+        .document-section {
+            border: 1px solid #e9ecef;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 3rem;
         }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -10px;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background-color: var(--bs-primary);
-            border: 4px solid white;
+        .document-title {
+            color: #0d6efd; /* Primary Blue */
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 0.5rem;
+        }
+        .doc-table th, .doc-table td {
+            vertical-align: top;
         }
     </style>
     
@@ -62,10 +52,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#snapshot">Financials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#project-plan">Project Plan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kpis">Metrics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#business-case">Business Case</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits-plan">Benefits Plan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project-charter">Project Charter</a></li>
                 </ul>
             </div>
         </div>
@@ -74,213 +63,151 @@
     <header class="p-5 text-center bg-primary text-white" style="margin-top: 56px;">
         <div class="container">
             <h1 class="display-3 fw-bold">Vets2PM Colorado Springs Expansion</h1>
-            <h2 class="display-6 fw-light">Strategic Investment & Benefit Realization</h2>
-            <p class="lead mt-3">Establishing the Master Project Leadership Workshop (MPLW) Hub in one of the nation's largest military markets.</p>
+            <h2 class="display-6 fw-light">Project Documentation Repository</h2>
+            <p class="lead mt-3">Access the core documentation including the Business Case, Benefits Plan, and Project Charter.</p>
         </div>
     </header>
 
-    <section id="snapshot" class="container my-5">
-        <h2 class="border-bottom pb-2 mb-4 text-primary">📊 Financial Snapshot</h2>
-        
-        <div class="row g-4 mb-5">
-            <div class="col-md-4">
-                <div class="card p-3 h-100 cost-box shadow-sm">
-                    <h5 class="card-title text-muted">PROGRAM COST</h5>
-                    <p class="display-4 fw-bold text-primary">$9,500</p>
-                    <p class="card-text">Corrected Baseline (Per Student)</p>
-                </div>
-            </div>
+    <section id="business-case" class="container my-5">
+        <div class="document-section shadow-sm">
+            <h2 class="document-title">📄 Vets2PM MPLW Colorado Springs Business Case</h2>
             
-            <div class="col-md-4">
-                <div class="card p-3 h-100 cost-box shadow-sm">
-                    <h5 class="card-title text-muted">PROJECTED BENEFITS</h5>
-                    <p class="display-4 fw-bold text-success">$25,000</p>
-                    <p class="card-text">Year 1 Outcomes (Estimated Student Value)</p>
-                </div>
-            </div>
+            <h3 class="text-secondary mt-4">1. Executive Summary</h3>
+            <p>Vets2PM seeks to expand its national footprint by expanding Master Project Leadership Workshop (MPLW) operations to Colorado Springs, establishing a dedicated operational presence in one of the largest military and veteran populations in the United States. Colorado’s military footprint—including Fort Carson, Peterson Space Force Base, Schriever Space Force Base, Buckley Space Force Base, and the U.S. Air Force Academy—produces 5,000–7,000 DD214s annually, a number projected to rise to approximately 7,500 by 2026.</p>
+            <p>This expansion will allow MPLW to deliver accredited career pathways, SkillBridge transition services, and employer-driven workforce pipelines in person. Establishing an MPLW hub in Colorado Springs strengthens our ability to support service members and veterans transitioning into project management, Agile, HR, cybersecurity, and other professional career fields. With a proven business model, strong demand signals from installation TAP offices, and a large veteran population that is trending upward each year, Colorado Springs represents a high-value, high-impact location for MPLW’s next regional expansion.</p>
+
+            <h3 class="text-secondary mt-4">2. Business Need (Customer Needs – Quantified)</h3>
+            <p>Colorado has one of the highest veteran concentrations in the nation: 85,000 veterans in 2024, rising to 87,000–88,000 in 2025, and forecasted to be near 90,000 by 2026. Annual DD214 issuance across Colorado Springs installations ranges from 5,000 to 7,000 and is growing.</p>
             
-            <div class="col-md-4">
-                <div class="card p-3 h-100 roi-box shadow-sm">
-                    <h5 class="card-title text-muted">RETURN ON INVESTMENT</h5>
-                    <p class="display-4 fw-bold text-success">163%</p>
-                    <p class="card-text">High Impact / Low Risk</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row g-4">
-            <div class="col-md-6">
-                <h3 class="mb-3 text-secondary">Investment Breakdown ($9,500)</h3>
-                <p class="text-muted fst-italic">Breakdown of the program cost per student, calculated from the infographic data.</p>
-                <ul class="list-group shadow-sm">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Training (42%)
-                        <span class="badge bg-primary rounded-pill">$4,000</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Materials (26%)
-                        <span class="badge bg-primary rounded-pill">$2,500</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Operations (21%)
-                        <span class="badge bg-primary rounded-pill">$2,000</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Marketing (11%)
-                        <span class="badge bg-primary rounded-pill">$1,000</span>
-                    </li>
-                </ul>
-            </div>
+            <h4 class="text-primary mt-3">Quantified Expected Benefits (Updated)</h4>
+            <p>MPLW training programs cost **$9,500** per student.</p>
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Annual DD214 Issuances: <span class="fw-bold">6,000–7,000</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Expected Capture Rate: <span class="fw-bold">1.6%</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Estimated Students per Year: <span class="fw-bold">96–112 students</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center text-success">Projected Revenue (Low Estimate: 96 students): <span class="fw-bold">$912,000/year</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center text-success">Projected Revenue (High Estimate: 112 students): <span class="fw-bold">$1,064,000/year</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center text-success">Cohort-Based Revenue (500 students): <span class="fw-bold">$4,750,000/year</span></li>
+            </ul>
 
-            <div class="col-md-6">
-                <h3 class="mb-3 text-secondary">Annual Revenue Projection</h3>
-                <p class="text-muted fst-italic">Based on a 1.6% market capture of 6,000-7,000 annual DD214 issuances.</p>
-                <div class="card p-3 h-100 shadow-sm">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            **Low Estimate** (96 students @ $9,500)
-                            <span class="fw-bold text-success">$912,000</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            **High Estimate** (112 students @ $9,500)
-                            <span class="fw-bold text-success">$1,064,000</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            **Cohort Model** (500 students @ $9,500)
-                            <span class="fw-bold text-success">$4,750,000</span>
-                        </li>
-                    </ul>
-                    <p class="mt-3 text-center">Projected break-even point is between **Q2 and Q3** of Year 1 , demonstrating rapid benefit realization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h3 class="text-secondary mt-4">4. Proposed Solution & Features (Summary)</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="fw-bold">Operational Hub:</span> Designated training and administrative facility.</li>
+                <li class="list-group-item"><span class="fw-bold">Training & Certification:</span> PMP® / CAPM® bootcamps, Agile/Scrum, HR, Cybersecurity fundamentals.</li>
+                <li class="list-group-item"><span class="fw-bold">Workforce Integration:</span> Employer-specific pipelines, on-site hiring events, and apprenticeship pathways.</li>
+            </ul>
 
-    <section id="solutions" class="container my-5">
-        <h2 class="border-bottom pb-2 mb-4 text-primary">💡 Training & Proposed Solutions</h2>
-        <p class="lead text-muted">The Vets2PM Colorado Program provides comprehensive career pathways through three core pillars.</p>
-
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm h-100 p-4">
-                    <h4 class="card-title text-primary">Training & Certifications</h4>
-                    <p class="card-text">Delivering accredited training for high-demand professional credentials.</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">PMP® / CAPM® Bootcamps</li>
-                        <li class="list-group-item">Agile/Scrum Pathways</li>
-                        <li class="list-group-item">HR Pathways (aPHR/PHR prep)</li>
-                        <li class="list-group-item">Cybersecurity Fundamentals</li>
-                        <li class="list-group-item">DoD SkillBridge-Approved Pipelines</li>
-                    </ul>
-                </div>
-            </div>
+            <h3 class="text-secondary mt-4">13. Critical Success Factors</h3>
+            <p>Executive sponsor engagement, Early installation and employer partnerships, Access to veteran population centers (Colorado Springs preferred), Certified instructor cadre, Full-time local program leadership, Strong marketing and community outreach, Consistent, measurable student placement data.</p>
             
-            <div class="col-md-4">
-                <div class="card shadow-sm h-100 p-4">
-                    <h4 class="card-title text-primary">Workforce Integration</h4>
-                    <p class="card-text">Creating direct employer engagement and robust hiring pipelines.</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Employer-Specific Pipelines (e.g., aerospace, construction)</li>
-                        <li class="list-group-item">On-site Hiring Events & Roundtables</li>
-                        <li class="list-group-item">Internship & Apprenticeship Pathways</li>
-                        <li class="list-group-item">Resume Translation & Interview Prep</li>
+            <h3 class="text-secondary mt-4">14. Criteria for Measuring Success</h3>
+            <p>Certification pass rates (PMP, CAPM, Scrum, HR, Cyber), SkillBridge cohort enrollment numbers, Job placement rate (target: 70–85%), Employer partnership growth (target: 20+ partners in Year 1), Revenue and cost-performance metrics, Veteran satisfaction surveys, DD214 issuance vs. market capture percentage.</p>
+        </div>
+    </section>
+
+    <section id="benefits-plan" class="container my-5">
+        <div class="document-section shadow-sm">
+            <h2 class="document-title">📈 Benefits Management Plan</h2>
+            
+            <h3 class="text-secondary mt-4">1. Introduction</h3>
+            <p><strong>Project Goal:</strong> Establish a Vets2PM office in Colorado Springs to train transitioning veterans and connect them with local project management roles.</p>
+            <p><strong>Key Benefits:</strong> The primary benefits are increased veteran employment in high-demand fields, successful military-to-civilian skill translation, and a strengthened local workforce with project management professionals (PMPs).</p>
+
+            <h3 class="text-secondary mt-4">3. Program Benefit Descriptions and Measures</h3>
+            <table class="table table-bordered doc-table">
+                <thead>
+                    <tr>
+                        <th>Benefit</th>
+                        <th>Metric ID# & Measurement</th>
+                        <th>Target/Program Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Increased veteran employment rate</td>
+                        <td>% of graduates employed in PM roles within 6 months.</td>
+                        <td>Target: 70–85% job placement rate</td>
+                    </tr>
+                    <tr>
+                        <td>Successful skill translation</td>
+                        <td>% of participants earning PMP, PMI-ACP, or Scrum Master certification.</td>
+                        <td>Track high pass rates from existing programs.</td>
+                    </tr>
+                    <tr>
+                        <td>Stronger local workforce</td>
+                        <td># of new employer partnerships established in Colorado Springs area.</td>
+                        <td>Target: 20+ partners in Year 1</td>
+                    </tr>
+                    <tr>
+                        <td>Program Viability/Revenue</td>
+                        <td>Program Capture Rate and Revenue Generation.</td>
+                        <td>Program Price: **$9,500** per student (Updated)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="text-secondary mt-4">4. Agency Key Performance Measures (KPMs)</h3>
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item"><span class="fw-bold text-success">KPM:</span> Veteran Employment Rate in Federal/Local Government</li>
+                <li class="list-group-item"><span class="fw-bold text-success">KPM:</span> Economic Impact/Regional Economic Activity (Projected annual revenue: $912,000 - $4,750,000)</li>
+                <li class="list-group-item"><span class="fw-bold text-success">KPM:</span> Talent Retention Rate within the Region</li>
+                <li class="list-group-item"><span class="fw-bold text-success">KPM:</span> Stakeholder Satisfaction Score</li>
+            </ul>
+
+            <h3 class="text-secondary mt-4">5. Benefits Realization Methodology</h3>
+            <p>Benefits Tracking: Track metrics quarterly in a spreadsheet (Project Benefit, Metric, Baseline Data/Date, Post-implementation Measurement Data/Quarter). Benefits Reporting: Report measurement data quarterly in status reports and to the Executive Steering Committee.</p>
+        </div>
+    </section>
+
+    <section id="project-charter" class="container my-5">
+        <div class="document-section shadow-sm">
+            <h2 class="document-title">📅 Project Charter</h2>
+
+            <table class="table table-bordered doc-table">
+                <tbody>
+                    <tr>
+                        <th scope="row" class="w-25">Project Title</th>
+                        <td>Vets2PM MPLW Establishment in Colorado Springs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project Objectives</th>
+                        <td>Stand up a Vets2PM MPLW Regional Hub in Colorado Springs; Deliver in-person and hybrid SkillBridge cohorts; Establish sustained partnerships; Achieve a first year’s revenue between **$863k and $1M**.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project Scope (Abstract)</th>
+                        <td>This project will establish and operationalize a new Vets2PM MPLW regional hub in Colorado Sprints, by **Q3 CY26**. The scope includes securing a physical facility, hiring local staff, establishing TAP connections, and building local employer partnerships.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 class="text-secondary mt-4">Summary Milestone Schedule</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Project Kick – Off: <span class="fw-bold">2 FEB 2026</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Facility Operational: <span class="fw-bold">10 APR 2026</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Staff Hired & TAP contracts established: <span class="fw-bold">1 MAY 2026</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">First Cohort Begins Instruction: <span class="fw-bold">6 JUL 2026</span></li>
+            </ul>
+
+            <h3 class="text-secondary mt-4">Constraints & Success Criteria</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-primary">Constraints:</h5>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item">Fixed project budget capped at **$250,000**.</li>
+                        <li class="list-group-item">Project completion deadline by **Q3 CY26** (July 2026 first cohort start).</li>
+                        <li class="list-group-item">Facility must comply with local zoning.</li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm h-100 p-4">
-                    <h4 class="card-title text-primary">Community of Practice</h4>
-                    <p class="card-text">Building a sustainable, local network for mentorship and professional growth.</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Quarterly Networking Sessions</li>
-                        <li class="list-group-item">Mentorship from Industry PMs & Veterans</li>
-                        <li class="list-group-item">Knowledge-Sharing Events</li>
-                        <li class="list-group-item">Veteran-Focused Transition Support</li>
-                    </ul>
+                <div class="col-md-6">
+                    <h5 class="text-success">Success Criteria:</h5>
+                    <p class="small">Project success will be demonstrated through the establishment of a fully operational and staffed Vets2PM MPLW hub in Colorado Springs by **Q3 CY26**. Two formal TAP partnership agreements will be secured, and the first cohort will begin instruction by **July 2026**, generating projected first-year revenue between $863K and $1M. Overall success will also be measured by strong employer engagement and at least **90%** satisfaction from students and partners.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="project-plan" class="container my-5">
-        <h2 class="border-bottom pb-2 mb-4 text-primary">🗓️ Project Plan & Timeline</h2>
-        <p class="lead text-muted">The project is governed by a fixed budget of $250k and a completion deadline of Q3 CY26.</p>
-        
-        <div class="row g-4">
-            <div class="col-md-6">
-                <h3 class="text-secondary mb-4">Summary Milestone Schedule</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">2 FEB 2026: Project Kick-Off</h5>
-                        <p class="text-muted">Formal start of the Project.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">13 MAR 2026: Facility Lease Signed</h5>
-                        <p class="text-muted">Securing the physical facility in Colorado Springs.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">10 APR 2026: Facility Operational</h5>
-                        <p class="text-muted">Hub is equipped for classrooms, hybrid delivery, and SkillBridge operations.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">1 MAY 2026: Staff Hired & TAP Contracts Secured</h5>
-                        <p class="text-muted">Local staff is hired and TAP contracts established with Fort Carson and Peterson SFB.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h5 class="fw-bold">6 JUL 2026: First Cohort Begins Instruction</h5>
-                        <p class="text-muted">Launch of the first in-person SkillBridge cohort.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <h3 class="text-secondary mb-4">Project Success Criteria</h3>
-                <div class="card shadow-sm h-100 p-4 border-success">
-                    <p class="lead">Project success will be demonstrated by achieving the following objectives:</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item border-0 pt-0"><span class="fw-bold">Operational Hub:</span> Fully operational and staffed Vets2PM MPLW hub in Colorado Springs by Q3 CY26.</li>
-                        <li class="list-group-item border-0"><span class="fw-bold">Partnerships:</span> Two formal TAP partnership agreements secured for sustained enrollment.</li>
-                        <li class="list-group-item border-0"><span class="fw-bold">Financial Goal:</span> First cohort starts July 2026, generating projected first-year revenue between $863K and $1M.</li>
-                        <li class="list-group-item border-0"><span class="fw-bold">Engagement:</span> Strong employer engagement and at least 90% satisfaction from students and partners.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="kpis" class="container my-5">
-        <h2 class="border-bottom pb-2 mb-4 text-primary">📈 Key Performance Measures (KPMs)</h2>
-        <p class="lead text-muted">Success will be measured by four core KPMs, supported by measurable KPIs and clear targets.</p>
-        
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100 p-4 border-success">
-                    <h4 class="text-success">🎯 Core KPMs (Measures of Value)</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Veteran Employment Rate in Federal/Local Government</li>
-                        <li class="list-group-item">Economic Impact / Regional Economic Activity</li>
-                        <li class="list-group-item">Talent Retention Rate within the Region</li>
-                        <li class="list-group-item">Stakeholder Satisfaction Score</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100 p-4 border-primary">
-                    <h4 class="text-primary">✅ Key Targets (KPIs)</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Job Placement Rate: **70–85%**</li>
-                        <li class="list-group-item">Employer Partnership Growth: **20+ Partners in Year 1**</li>
-                        <li class="list-group-item">Certification Attainment Rate: **High Pass Rates** (PMP, Agile, Scrum)</li>
-                        <li class="list-group-item">Market Capture: **1.6%** of annual DD214 issuances</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <footer class="text-center p-3 bg-dark text-white mt-5">
-        <p class="mb-0">&copy; 2026 Vets2PM Colorado. All rights reserved. | Business Case v1.0</p>
+        <p class="mb-0">&copy; 2026 Vets2PM Colorado. All rights reserved. | Document Repository</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
